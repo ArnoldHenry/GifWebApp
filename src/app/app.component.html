@@ -17,14 +17,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <div class="container mytitle">
         <h3 class="w3-allerta">Giphy WebApp</h3>
-        <div class="d-flex p-3 text-white  justify-content-center"> 
-              <input class="gifinput" type="text" name="search" #SearchTerm>
+        <div class="d-flex text-white  justify-content-center"> 
+              <input class="gifinput form-control form-rounded"  type="text" name="search" #SearchTerm>
               <button class="gifsearch fa fa-search prefix" (click)="PerformSearch(SearchTerm)"></button>
               <br>
         </div>
       </div>
+<!-- Display trending apps -->
+<div class="container">
+
+</div>
+
+
       <!-- Display when button pressed -->
       <div class="container-flex">
           <div class="row">

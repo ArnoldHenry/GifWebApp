@@ -14,19 +14,18 @@ h3{
   }
   .gifsearch{
       text-align: center;
-      border-radius:3px;
-      padding: 20px;
+      border-radius: 1rem;
       border: none;
       margin: 3px;
-
       background-color: #41E3CF;
       cursor: pointer;
+      width: 10%;
   }
   .gifinput{
+      margin: 1%;
     text-align: center;
-    border-radius:3px; 
-    border: 1px solid #41E3CF;
-    width: 25%;
+    border-radius: 1rem;
+    width: 30%;
     transition: 6;
   }
   .gifinput:hover{
