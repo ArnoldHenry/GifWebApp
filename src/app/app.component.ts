@@ -15,7 +15,6 @@ export class AppComponent {
   http:Http;
   giphies=[];
   trendgifs=[];
-  page: number=1;
   
   constructor(http:Http){
     this.http = http;
@@ -31,11 +30,6 @@ export class AppComponent {
       console.log(newres.json().data);
     })
   } 
-  onScroll(){
-    console.log("scrolled");  
-    this.page = this.page + 1;  
-    this.constructor(); 
-  }
 
 
   PerformSearch(SearchTerm: HTMLInputElement):void{

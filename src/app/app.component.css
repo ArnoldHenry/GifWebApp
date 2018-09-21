@@ -13,23 +13,26 @@ h3{
     font-family: "Allerta Stencil", Sans-serif;
   }
   .gifsearch{
-      text-align: center;
-      border-radius: 1rem;
-      border: none;
-      margin: 3px;
-      background-color: #41E3CF;
+      border: transparent;
+      margin: 1px;
+      background-color:transparent;
       cursor: pointer;
-      width: 10%;
+      width: 0px;
+      outline:none;
+  }
+  .gifsearch:hover{
+    border: none;
+    background-color:transparent;
   }
   .gifinput{
-      margin: 1%;
+    margin: 1%;
     text-align: center;
     border-radius: 1rem;
     width: 30%;
     transition: 6;
   }
   .gifinput:hover{
-    border: 1px #41E3CF;
+    border: transparent;
     transition: 10;
   }
   img {

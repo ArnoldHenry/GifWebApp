@@ -18,30 +18,37 @@
 </head>
 <body>
 
-    <div class="container mytitle">
+    <div class="container-flex mytitle">
         <h3 class="w3-allerta">Giphy WebApp</h3>
         <div class="d-flex text-white  justify-content-center"> 
-              <input class="gifinput form-control form-rounded"  type="text" name="search" #SearchTerm>
+              <input class="gifinput form-control form-rounded" placeholder="Search gif ..."  type="text" name="search" #SearchTerm required>
               <button class="gifsearch fa fa-search prefix" (click)="PerformSearch(SearchTerm)"></button>
               <br>
         </div>
       </div>
-<!-- Display trending apps -->
-<div class="container">
 
+      <!-- Trending Gifs -->
+      <div class="container">
+          <div class="row">
+            <div class="card-deck col-md-4" style="margin-top:5px;margin-left:5px;" *ngFor="let newtrend of trendgifs">
+              <div class="card">
+                  <img src="{{newtrend.images.original.url}}">
+              </div>
+            </div>
+          </div>
+        </div>
+ <!-- Display when button pressed -->
+<div class="container">
+  <div class="row">
+    <div class="card-deck col-md-4" style="margin-top:5px;margin-left:5px;" *ngFor="let gif of giphies">
+      <div class="card">
+          <img src="{{gif.images.original.url}}">
+      </div>
+    </div>
+  </div>
 </div>
 
 
-      <!-- Display when button pressed -->
-      <div class="container-flex">
-          <div class="row">
-      <div class="card-deck col-md-4" style="margin-top:5px;margin-left:5px;" *ngFor="let newtrend of giphies">
-          <div class="card">
-            <img src="{{newtrend.images.original.url}}">
-          </div>
-        </div>
-      </div>
-      </div>  
 
 
       <!-- <div class="container-flex">
